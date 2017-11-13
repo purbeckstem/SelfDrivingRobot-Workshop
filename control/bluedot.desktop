@@ -1,4 +1,8 @@
+### File that is placed on the Jessie / Stretch Desktop that allows the Pi to autorun the python script on reboot.
+### make sure the file is exectutable with sudo chmod +x <your filename> before reboot, and that you have the #!/usr/bin/python3
+### at the start of your python code. 
+
 [Desktop Entry]
 Type=Application
 Name=Bluedot
-Exec=sh -c '~/bluedotty.py'
+Exec=sh -c '~/bluedotcontrol.py'
