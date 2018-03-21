@@ -1,8 +1,13 @@
 ###Coded entirely by Gantelope: https://gist.github.com/Gantelope/ac1f62d91b35cf6a9144e6ce1885718c ### 
 ### used, as I thought there was a problem with my line following code, but I had plugged in the VCC, GND, and signal wires muddled.  
 
-# Tested using a robot built from the box the kit came in.
-# Wheels mounted to the front of the robot. Sensor mounted between the wheels so turning arc of the sensor is small.
+###Plug your line sensor module into the following pins
+### VCC :   3V3 on motor controller 
+### GND :   GND on motor controller
+### OUT :   GPIO 25 on motor controller.
+
+##tested and working with Mr Davids' robot.  
+# Original code had robot with drive wheels at front - may need to swap robot.left and robot.right in the code to get it to turn the correct way when seeking  
 from gpiozero import CamJamKitRobot
 from gpiozero import Button
 import time
